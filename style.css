@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;600&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+html{
+    font-size:93.75%; /*15px*/
+}
+body {
+    --header: #0CCA00;
+    --spending: #ff5051;
+    --gains: #2bc99b;
+    --totals: #80e894;
+    --bgspendeng: #f8697c;
+    --titles: #363f5f;
+    background: #c6c8ca;
+}
+
+a {
+    color: #2a9d01;
+    text-decoration: none;
+
+}
+
+a:hover {
+    color: #44ff00;
+}
+
+.button.new {
+    display: inline-block;
+    margin-bottom: .8rem;
+}
+
+
+.button.cancel{
+    color: #fff;
+    background: var(--bgspendeng);
+    border: 2px solid var(--spending);
+    border-radius: 0.25rem;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button.cancel:hover{
+    color:#fff;
+    background: var(--spending);
+}
+
+button{
+    width: 100%;
+    height:50px;
+    border:none;
+    color:#fff;
+    background: var(--gains);
+    border-radius: .25rem;
+    cursor:pointer;
+}
+button:hover{
+    background: var(--totals);
+    border: 1px solid var(--header);
+}
+
+h2 {
+    margin-top: 3.2rem;
+    margin-bottom: 0.8rem;
+    color: var(--titles);
+    font-weight: 400;
+}
+
+.sr-only {
+    position:absolute;
+    width:1px;
+    height:1px;
+    padding:0;
+    margin:-1px;
+    overflow:hidden;
+    clip:rect(0,0,0,0);
+    white-space: nowrap;
+    border-width: 0;
+}
+
+.container {
+    width: min(90vw, 800px);
+    margin: auto;
+}
+
+header {
+    background: var(--header);
+    padding: 2rem 0 10rem;
+    text-align: center;
+}
+
+.logo {
+    color: #fff;
+    font-weight: 100;
+}
+
+#balance {
+    margin-top: -8rem;
+}
+
+#balance h2 {
+    color: #fff;
+    margin-top: 0;
+}
+
+.card {
+    background: #fff;
+    padding: 1.5rem 2rem;
+    border-radius: 0.25rem;
+    margin-bottom: 2rem;
+}
+.card h3{
+    font-weight: normal;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#gains h3 {
+    font-weight: normal;
+    font-size: 1rem;
+    color: var(--gains);
+
+}
+
+#gains p {
+    font-size: 2rem;
+    line-height: 3rem;
+    margin-top: 1rem;
+}
+
+#spending h3 {
+    font-weight: normal;
+    font-size: 1rem;
+    color: var(--spending)
+}
+
+#spending p {
+    font-size: 2rem;
+    line-height: 3rem;
+    margin-top: 1rem;
+}
+
+#totals {
+    background: var(--totals);
+    color: #fff;
+}
+
+#totals h3 {
+    font-weight: normal;
+    font-size: 1rem;
+}
+
+#totals p {
+    font-size: 2rem;
+    line-height: 3rem;
+    margin-top: 1rem;
+}
+
+footer {
+    text-align: center;
+    padding: 4rem 0 2em;
+    color: var(--titles);
+    opacity: 0.6;
+}
